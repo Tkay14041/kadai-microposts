@@ -8,7 +8,7 @@
 					<h3 class="panel-title">{{ $user->name }}</h3>
 				</div>
 				<div class="panel-body">
-					<img class="media-object img-rouded img-responsive" src="{{ Gravater::src($user->email, 500) }}" alt="" >
+					<img class="media-object img-rouded img-responsive" src="{{ Gravatar::src($user->email, 500) }}" alt="" >
 				</div>
 			</div>
 			@include('user_follow.follow_button', ['user' => $user])
